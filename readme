@@ -1,0 +1,8 @@
+- project:
+  run server:
+  1. .venv/scripts/activate
+  2. fastapi dev src/
+- database:
+  run migrations:
+  1. alembic revision --autogenerate -m "init"
+  2. alembic upgrade head
